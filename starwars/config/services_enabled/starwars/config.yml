@@ -1,0 +1,10 @@
+# The service's display name
+name: "Starwars"
+# Source URL path
+path: "/starwars"
+# Destination URL (where to proxy requests to)
+forward_url: "http://localhost:8080/starwars"
+
+# false for forwarding the original request,
+# true for the reduced version.
+forward_reduced: true

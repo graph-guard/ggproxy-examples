@@ -1,0 +1,28 @@
+---
+# The template's display name
+name: "A"
+---
+query {
+    hero(episode: val = NEWHOPE || val = EMPIRE) {
+        id
+        name
+        friends {
+            id
+        }
+        friendsConnection(first: any, after: any) {
+            totalCount
+            edges {
+                cursor
+                node {
+                    id
+                }
+            }
+            friends {
+                id
+                name
+                appearsIn
+            }
+        }
+        appearsIn
+    }
+}
