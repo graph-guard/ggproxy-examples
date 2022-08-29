@@ -2,7 +2,7 @@
 name: "C"
 ---
 query {
-    hero(episode: val = NEWHOPE || val = EMPIRE) {
+    hero(episode: val = EMPIRE || val = JEDI) {
         id
         name
         appearsIn

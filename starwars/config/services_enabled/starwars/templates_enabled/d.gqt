@@ -2,7 +2,7 @@
 name: "D"
 ---
 query {
-    hero(episode: val = NEWHOPE || val = EMPIRE) {
+    hero(episode: val = EMPIRE || val = JEDI) {
         id
         name
         appearsIn
@@ -12,7 +12,7 @@ query {
             appearsIn
         }
     }
-    reviews(episode: val = NEWHOPE || val = EMPIRE) {
+    reviews(episode: val = EMPIRE || val = JEDI) {
         stars
         commentary
         time
