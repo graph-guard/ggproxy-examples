@@ -1,0 +1,20 @@
+---
+name: "B"
+---
+query {
+    hero(episode: val = NEWHOPE || val = EMPIRE) {
+        id
+        name
+        appearsIn
+        friends {
+            id
+            name
+            appearsIn
+            friends {
+                id
+                name
+                appearsIn
+            }
+        }
+    }
+}

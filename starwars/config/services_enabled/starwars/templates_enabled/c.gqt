@@ -1,0 +1,28 @@
+---
+name: "C"
+---
+query {
+    hero(episode: val = NEWHOPE || val = EMPIRE) {
+        id
+        name
+        appearsIn
+        friends {
+            id
+            name
+            appearsIn
+            friends {
+                id
+                name
+                appearsIn
+            }
+        }
+        friendsConnection(first: val >= 0, after: bytelen > 0) {
+            totalCount
+            friends {
+                id
+                name
+                appearsIn
+            }
+        }
+    }
+}
